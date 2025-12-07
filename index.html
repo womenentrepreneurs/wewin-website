@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeWin | Women Entrepreneurs Win Network</title>
-    <meta name="description" content="Empowering women entrepreneurs in Ohio with strategic research and emotional resilience.">
+    <meta name="description" content="Empowering women entrepreneurs in Ohio with strategic research, community, and emotional resilience.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
@@ -69,9 +69,9 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="text-slate-600 hover:text-brand-600 font-medium transition">My Story</a>
-                    <a href="#services" class="text-slate-600 hover:text-brand-600 font-medium transition">Services</a>
-                    <a href="#resources" class="text-slate-600 hover:text-brand-600 font-medium transition">Resource Vault</a>
-                    <a href="#contact" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Start Your Journey</a>
+                    <a href="#services" class="text-slate-600 hover:text-brand-600 font-medium transition">How It Works</a>
+                    <a href="#membership" class="text-brand-600 font-bold hover:text-brand-800 transition">Membership</a>
+                    <a href="#contact" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Get Started</a>
                 </div>
                 <div class="md:hidden">
                     <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-brand-600">
@@ -83,9 +83,9 @@
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-100 p-4">
             <div class="flex flex-col space-y-4">
                 <a href="#about" class="text-slate-600 font-medium">My Story</a>
-                <a href="#services" class="text-slate-600 font-medium">Services</a>
-                <a href="#resources" class="text-slate-600 font-medium">Resource Vault</a>
-                <a href="#contact" class="text-brand-600 font-bold">Start Your Journey</a>
+                <a href="#services" class="text-slate-600 font-medium">How It Works</a>
+                <a href="#membership" class="text-brand-600 font-bold">Membership</a>
+                <a href="#contact" class="text-brand-600 font-bold">Get Started</a>
             </div>
         </div>
     </nav>
@@ -98,34 +98,30 @@
             <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
                 <div class="lg:col-span-7 text-center lg:text-left">
                     <div class="inline-flex items-center px-3 py-1 rounded-full bg-brand-100 text-brand-700 text-sm font-semibold mb-6">
-                        <span class="mr-2">✨</span> Focusing on Women 40+ & International Entrepreneurs
+                        <span class="mr-2">✨</span> New: Entrepreneur Skill Assessment
                     </div>
                     <h1 class="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight mb-6">
                         Don't Just Start a Business. <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-teal-500">Navigate It.</span>
                     </h1>
                     <p class="text-lg text-slate-600 mb-8 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                        Combining <strong>strategic research</strong> with <strong>counseling support</strong> to help you overcome bureaucratic chaos and fear of failure. Your guide to thriving in Ohio.
+                        Combining <strong>strategic research</strong> with <strong>counseling support</strong> to help women entrepreneurs in Ohio overcome bureaucratic chaos and fear of failure.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button onclick="document.getElementById('contact').scrollIntoView()" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
-                            <i data-lucide="map" class="w-5 h-5"></i>
-                            Get Your Roadmap
+                        <button onclick="document.getElementById('assessment-intro').scrollIntoView()" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                            Take Free Skill Assessment
                         </button>
-                        <button onclick="document.getElementById('resources').scrollIntoView()" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
-                            <i data-lucide="search" class="w-5 h-5"></i>
-                            Explore Resources
+                        <button onclick="document.getElementById('membership').scrollIntoView()" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
+                            View Membership Plans
                         </button>
                     </div>
                     <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500">
                         <div class="flex items-center gap-1">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Step-by-Step Plans
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Free Profile Analysis
                         </div>
                         <div class="flex items-center gap-1">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Emotional Support
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Multilingual
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Ohio-Specific
                         </div>
                     </div>
                 </div>
@@ -151,30 +147,23 @@
 
     <section id="about" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-3xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold text-brand-900 mb-4">More Than Just a Business Coach</h2>
-                <p class="text-lg text-slate-600">
-                    I believe success is 50% strategy and 50% mindset. With a background in School Counseling and international life, I understand the unique challenges of starting over.
-                </p>
-            </div>
-
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-brand-50 border border-brand-100 hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-brand-200 rounded-lg flex items-center justify-center text-brand-700 mb-6">
                         <i data-lucide="heart-handshake" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">The Counselor's Approach</h3>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Counselor's Approach</h3>
                     <p class="text-slate-600">
-                        Starting a business is scary. I use counseling techniques to help you manage anxiety, imposter syndrome, and the fear of the unknown.
+                        I use counseling techniques to help you manage anxiety, imposter syndrome, and the fear of the unknown.
                     </p>
                 </div>
                 <div class="p-8 rounded-2xl bg-teal-50 border border-teal-100 hover:shadow-lg transition">
                     <div class="w-12 h-12 bg-teal-200 rounded-lg flex items-center justify-center text-teal-700 mb-6">
                         <i data-lucide="search-check" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-teal-900 mb-3">The Researcher's Precision</h3>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Researcher's Precision</h3>
                     <p class="text-slate-600">
-                        I love details. I dive deep into government grants, certifications, and paperwork so you get clear, step-by-step checklists, not vague advice.
+                        I dive deep into government grants, certifications (WBE/MBE), and paperwork so you get clear checklists.
                     </p>
                 </div>
                 <div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 hover:shadow-lg transition">
@@ -183,186 +172,137 @@
                     </div>
                     <h3 class="text-xl font-bold text-orange-900 mb-3">Global Experience</h3>
                     <p class="text-slate-600">
-                        Having lived in Turkey, Russia, and Kyrgyzstan, I specialize in helping women from diverse backgrounds navigate the US business system.
+                        Specializing in helping women from diverse backgrounds navigate the US business system.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services" class="py-20 bg-brand-900 text-white relative overflow-hidden">
+    <section id="membership" class="py-24 bg-brand-900 text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">How WeWin Works Together</h2>
-                <p class="text-brand-200 max-w-2xl mx-auto">
-                    Tailored support for every stage of your journey. Whether you need a listening ear or a detailed grant application review.
+                <h2 class="text-3xl md:text-5xl font-bold mb-4">Choose Your Path</h2>
+                <p class="text-brand-200 max-w-2xl mx-auto text-lg">
+                    Whether you are just curious or ready to dominate the market, we have a space for you.
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12">
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="w-14 h-14 rounded-full bg-brand-700 flex items-center justify-center border-2 border-brand-500">
-                            <span class="text-2xl font-bold">1</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">The "Navigator" Session</h3>
-                        <p class="text-brand-200 mb-4">
-                            A hybrid of life coaching and business strategy. We map out your skills, address your fears, and create a realistic timeline for your Ohio business launch.
-                        </p>
-                        <ul class="space-y-2 text-sm text-brand-100">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Clarify your business idea</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Overcome "Analysis Paralysis"</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="w-14 h-14 rounded-full bg-brand-700 flex items-center justify-center border-2 border-brand-500">
-                            <span class="text-2xl font-bold">2</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Paperwork & Research Concierge</h3>
-                        <p class="text-brand-200 mb-4">
-                            Hate forms? I love them. I help you navigate the Ohio Business Gateway, set up your EIN, and identify the exact permits you need.
-                        </p>
-                        <ul class="space-y-2 text-sm text-brand-100">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> LLC & EIN Filing Assistance</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Grant Eligibility Research</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="w-14 h-14 rounded-full bg-brand-700 flex items-center justify-center border-2 border-brand-500">
-                            <span class="text-2xl font-bold">3</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">Newcomer's Business Bridge</h3>
-                        <p class="text-brand-200 mb-4">
-                            Specialized support for immigrants. Learn the unwritten rules of American business culture, networking etiquette, and communication styles.
-                        </p>
-                        <ul class="space-y-2 text-sm text-brand-100">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Cultural adaptation strategy</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Networking confidence building</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="grid lg:grid-cols-3 gap-8 items-start">
                 
-                 <div class="flex gap-6">
-                    <div class="flex-shrink-0">
-                        <div class="w-14 h-14 rounded-full bg-brand-700 flex items-center justify-center border-2 border-brand-500">
-                            <span class="text-2xl font-bold">4</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl font-bold mb-2">The "Resource Vault" Access</h3>
-                        <p class="text-brand-200 mb-4">
-                           Access my curated library of Ohio-specific checklists, simplified government documents, and funding calendars. 
-                        </p>
-                        <ul class="space-y-2 text-sm text-brand-100">
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> WBE/MBE Certification Checklists</li>
-                            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4"></i> Monthly Grant Alerts</li>
-                        </ul>
-                    </div>
+                <div class="bg-white text-slate-800 rounded-3xl p-8 border-4 border-brand-200 shadow-2xl relative transform hover:-translate-y-2 transition duration-300">
+                    <div class="absolute top-0 right-0 bg-teal-400 text-white text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-2xl">POPULAR START</div>
+                    <h3 class="text-2xl font-bold text-brand-900 mb-2">WeWin Spark</h3>
+                    <div class="text-4xl font-bold mb-6">$0<span class="text-lg text-slate-400 font-normal">/mo</span></div>
+                    <p class="text-slate-600 mb-6 text-sm h-10">Discover your entrepreneur type and get weekly motivation.</p>
+                    
+                    <ul class="space-y-4 mb-8 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> <strong>Entrepreneur Skill Assessment</strong>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> Basic "Spark" Profile Report
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> Weekly Newsletter
+                        </li>
+                    </ul>
+                    
+                    <button onclick="document.getElementById('assessment-intro').scrollIntoView()" class="w-full py-4 rounded-xl border-2 border-brand-600 text-brand-600 font-bold hover:bg-brand-50 transition">
+                        Take Free Assessment
+                    </button>
                 </div>
+
+                <div class="bg-gradient-to-b from-brand-100 to-white text-slate-800 rounded-3xl p-8 border-4 border-brand-400 shadow-2xl relative transform scale-105 z-10">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-brand-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">RECOMMENDED</div>
+                    <h3 class="text-2xl font-bold text-brand-900 mb-2">WeWin Builder</h3>
+                    <div class="text-4xl font-bold mb-6">$19<span class="text-lg text-slate-400 font-normal">/mo</span></div>
+                    <p class="text-slate-600 mb-6 text-sm h-10">Tools, checklists, and templates to build your business yourself.</p>
+                    
+                    <ul class="space-y-4 mb-8 text-sm">
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
+                            <strong>Everything in Spark</strong>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
+                            <strong>Detailed</strong> Assessment Report
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
+                            Access to <strong>Resource Vault</strong>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
+                            Ohio LLC & Grant Templates
+                        </li>
+                    </ul>
+                    
+                    <button onclick="alert('WeWin Builder is opening soon! You have been added to the waitlist.')" class="w-full py-4 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 transition shadow-lg">
+                        Join Waitlist
+                    </button>
+                    <div class="text-center mt-3 text-xs text-brand-700 font-medium">Coming Soon</div>
+                </div>
+
+                <div class="bg-brand-800 text-white rounded-3xl p-8 border-4 border-brand-700 shadow-2xl relative transform hover:-translate-y-2 transition duration-300">
+                    <h3 class="text-2xl font-bold text-white mb-2">WeWin Circle</h3>
+                    <div class="text-4xl font-bold mb-6">$49<span class="text-lg text-brand-300 font-normal">/mo</span></div>
+                    <p class="text-brand-100 mb-6 text-sm h-10">Community, accountability, and direct guidance.</p>
+                    
+                    <ul class="space-y-4 mb-8 text-sm text-brand-100">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> <strong>Everything in Builder</strong>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Monthly <strong>Mastermind Calls</strong>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Private Community Group
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Priority Email Support
+                        </li>
+                    </ul>
+                    
+                    <button onclick="alert('WeWin Circle is opening soon! You have been added to the waitlist.')" class="w-full py-4 rounded-xl bg-brand-500 text-white font-bold hover:bg-brand-400 transition border border-brand-400">
+                        Join Waitlist
+                    </button>
+                    <div class="text-center mt-3 text-xs text-brand-300 font-medium">Coming Soon</div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="resources" class="py-20 bg-brand-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-brand-100">
-                <div class="grid md:grid-cols-2">
-                    <div class="p-10 flex flex-col justify-center">
-                        <div class="inline-block px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-xs font-bold mb-4 w-fit">COMING SOON</div>
-                        <h2 class="text-3xl font-bold text-slate-900 mb-4">The WeWin Resource Vault</h2>
-                        <p class="text-slate-600 mb-6">
-                            I've spent hundreds of hours researching Ohio's business ecosystem so you don't have to. Get access to simplified guides for:
-                        </p>
-                        <ul class="space-y-3 mb-8">
-                            <li class="flex items-center gap-3 text-slate-700">
-                                <i data-lucide="file-text" class="text-brand-500"></i>
-                                <span>Ohio Minority Business Direct Loan Checklist</span>
-                            </li>
-                            <li class="flex items-center gap-3 text-slate-700">
-                                <i data-lucide="file-text" class="text-brand-500"></i>
-                                <span>Women-Owned Business Certification Guide</span>
-                            </li>
-                            <li class="flex items-center gap-3 text-slate-700">
-                                <i data-lucide="file-text" class="text-brand-500"></i>
-                                <span>"First 30 Days" Compliance Calendar</span>
-                            </li>
-                        </ul>
-                        <button class="bg-slate-900 text-white px-6 py-3 rounded-lg hover:bg-slate-800 transition w-fit">
-                            Join Waitlist for Access
-                        </button>
-                    </div>
-                    <div class="bg-slate-100 p-10 flex items-center justify-center relative overflow-hidden">
-                        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#6b21a8 1px, transparent 1px); background-size: 20px 20px;"></div>
-                        
-                        <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-xs transform rotate-3 border border-slate-200 relative z-10">
-                            <div class="h-4 w-1/3 bg-brand-200 rounded mb-4"></div>
-                            <div class="h-2 w-full bg-slate-100 rounded mb-2"></div>
-                            <div class="h-2 w-full bg-slate-100 rounded mb-2"></div>
-                            <div class="h-2 w-2/3 bg-slate-100 rounded mb-6"></div>
-                            
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2">
-                                    <div class="w-4 h-4 border-2 border-teal-500 rounded flex items-center justify-center"><div class="w-2 h-2 bg-teal-500 rounded-full"></div></div>
-                                    <div class="h-2 w-3/4 bg-slate-100 rounded"></div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <div class="w-4 h-4 border-2 border-slate-300 rounded"></div>
-                                    <div class="h-2 w-3/4 bg-slate-100 rounded"></div>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <div class="w-4 h-4 border-2 border-slate-300 rounded"></div>
-                                    <div class="h-2 w-3/4 bg-slate-100 rounded"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <section id="assessment-intro" class="py-20 bg-brand-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="inline-block p-4 rounded-full bg-white mb-6 shadow-sm">
+                <i data-lucide="brain-circuit" class="w-8 h-8 text-brand-600"></i>
             </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-brand-900 mb-4">Let's Navigate This Together</h2>
-            <p class="text-slate-600 mb-8">
-                Ready to turn your anxiety into action? Book a free 15-minute discovery call. I speak English, Turkish, and Russian.
+            <h2 class="text-3xl font-bold text-brand-900 mb-6">Discover Your Entrepreneurial DNA</h2>
+            <p class="text-lg text-slate-600 mb-8">
+                Are you a "Visionary" who needs help with details, or a "Maker" who is afraid to sell? 
+                Take this 5-minute assessment to find your blind spots and get your <strong>free "WeWin Spark" profile.</strong>
             </p>
             
-            <form class="space-y-4 text-left bg-brand-50 p-8 rounded-2xl border border-brand-100 shadow-sm" onsubmit="event.preventDefault(); alert('Thank you! Nesibe will contact you shortly.');">
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">Name</label>
-                    <input type="text" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="Your name">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">Email</label>
-                    <input type="email" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition" placeholder="your@email.com">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-slate-700 mb-1">What is your biggest challenge right now?</label>
-                    <select class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition bg-white">
-                        <option>I have an idea, but I'm scared to start</option>
-                        <option>I am overwhelmed by paperwork/bureaucracy</option>
-                        <option>I need funding/grants guidance</option>
-                        <option>I am new to the US system</option>
-                    </select>
-                </div>
-                <button type="submit" class="w-full bg-brand-600 text-white font-bold py-4 rounded-lg hover:bg-brand-700 transition shadow-md">
-                    Request Discovery Call
-                </button>
-            </form>
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-brand-100 max-w-xl mx-auto text-left">
+                <h3 class="font-bold text-lg mb-4">Start the Assessment</h3>
+                <form class="space-y-4" onsubmit="event.preventDefault(); alert('The assessment module is being connected. In the future, this button will take you to the quiz page!');">
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">First Name</label>
+                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
+                        <input type="email" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Where should we send your results?">
+                    </div>
+                    <button type="submit" class="w-full bg-brand-600 text-white font-bold py-3 rounded-lg hover:bg-brand-700 transition flex items-center justify-center gap-2">
+                        Begin Assessment <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </button>
+                    <p class="text-xs text-slate-400 text-center mt-2">Free. No credit card required.</p>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -384,7 +324,8 @@
                 </div>
             </div>
             <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-500">
-                &copy; 2025 WeWin Network. All rights reserved.
+                &copy; 2025 WeWin LLC. All rights reserved. <br>
+                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
             </div>
         </div>
     </footer>
