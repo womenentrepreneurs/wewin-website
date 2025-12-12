@@ -71,7 +71,7 @@
                     <a href="#about" class="text-slate-600 hover:text-brand-600 font-medium transition">My Story</a>
                     <a href="#services" class="text-slate-600 hover:text-brand-600 font-medium transition">How It Works</a>
                     <a href="#membership" class="text-brand-600 font-bold hover:text-brand-800 transition">Membership</a>
-                    <a href="#contact" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Get Started</a>
+                    <a href="#assessment-intro" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Get Started</a>
                 </div>
                 <div class="md:hidden">
                     <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-brand-600">
@@ -85,7 +85,7 @@
                 <a href="#about" class="text-slate-600 font-medium">My Story</a>
                 <a href="#services" class="text-slate-600 font-medium">How It Works</a>
                 <a href="#membership" class="text-brand-600 font-bold">Membership</a>
-                <a href="#contact" class="text-brand-600 font-bold">Get Started</a>
+                <a href="#assessment-intro" class="text-brand-600 font-bold">Get Started</a>
             </div>
         </div>
     </nav>
@@ -108,11 +108,11 @@
                         Combining <strong>strategic research</strong> with <strong>counseling support</strong> to help women entrepreneurs in Ohio overcome bureaucratic chaos and fear of failure.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button onclick="document.getElementById('assessment-intro').scrollIntoView()" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
+                        <button onclick="document.getElementById('assessment-intro').scrollIntoView({behavior: 'smooth'})" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
                             <i data-lucide="sparkles" class="w-5 h-5"></i>
                             Take Free Skill Assessment
                         </button>
-                        <button onclick="document.getElementById('membership').scrollIntoView()" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
+                        <button onclick="document.getElementById('membership').scrollIntoView({behavior: 'smooth'})" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
                             View Membership Plans
                         </button>
                     </div>
@@ -127,7 +127,7 @@
                 </div>
                 <div class="lg:col-span-5 mt-12 lg:mt-0 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2 hover:rotate-0 transition duration-500">
-                        <img src="nesibe.jpeg" alt="Nesibe Aydin" class="w-full h-auto object-cover">
+                        <img src="nesibe.jpeg" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Nesibe Aydin" class="w-full h-auto object-cover">
                         
                         <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-4 border-t border-brand-100">
                             <h3 class="font-serif text-xl text-brand-800">Nesibe Aydin</h3>
@@ -209,7 +209,7 @@
                         </li>
                     </ul>
                     
-                    <button onclick="document.getElementById('assessment-intro').scrollIntoView()" class="w-full py-4 rounded-xl border-2 border-brand-600 text-brand-600 font-bold hover:bg-brand-50 transition">
+                    <button onclick="document.getElementById('assessment-intro').scrollIntoView({behavior: 'smooth'})" class="w-full py-4 rounded-xl border-2 border-brand-600 text-brand-600 font-bold hover:bg-brand-50 transition">
                         Take Free Assessment
                     </button>
                 </div>
@@ -276,33 +276,37 @@
     </section>
 
     <section id="assessment-intro" class="py-20 bg-brand-50">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div class="inline-block p-4 rounded-full bg-white mb-6 shadow-sm">
                 <i data-lucide="brain-circuit" class="w-8 h-8 text-brand-600"></i>
             </div>
-            <h2 class="text-3xl font-bold text-brand-900 mb-6">Discover Your Entrepreneurial DNA</h2>
-            <p class="text-lg text-slate-600 mb-8">
-                Are you a "Visionary" who needs help with details, or a "Maker" who is afraid to sell? 
-                Take this 5-minute assessment to find your blind spots and get your <strong>free "WeWin Spark" profile.</strong>
+            <h2 class="text-3xl font-bold text-brand-900 mb-2">Discover Your Entrepreneurial DNA</h2>
+            <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
+                Are you a "Visionary" or a "System Builder"? Take this 2-minute assessment to find your blind spots and get your <strong>free "WeWin Spark" profile.</strong>
             </p>
             
-            <div class="bg-white p-8 rounded-2xl shadow-lg border border-brand-100 max-w-xl mx-auto text-left">
-                <h3 class="font-bold text-lg mb-4">Start the Assessment</h3>
-                <form class="space-y-4" onsubmit="event.preventDefault(); alert('The assessment module is being connected. In the future, this button will take you to the quiz page!');">
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">First Name</label>
-                        <input type="text" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Enter your name">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-slate-700 mb-1">Email Address</label>
-                        <input type="email" class="w-full px-4 py-3 rounded-lg border border-brand-200 focus:ring-2 focus:ring-brand-500 outline-none" placeholder="Where should we send your results?">
-                    </div>
-                    <button type="submit" class="w-full bg-brand-600 text-white font-bold py-3 rounded-lg hover:bg-brand-700 transition flex items-center justify-center gap-2">
-                        Begin Assessment <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            <div class="bg-white rounded-2xl shadow-xl border border-brand-100 overflow-hidden">
+                
+                <div class="bg-brand-50 p-4 border-b border-brand-100 flex justify-center gap-4">
+                    <button onclick="showEnglish()" id="btn-en" class="px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md">
+                        ENGLISH
                     </button>
-                    <p class="text-xs text-slate-400 text-center mt-2">Free. No credit card required.</p>
-                </form>
+                    <button onclick="showTurkish()" id="btn-tr" class="px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50">
+                        TÜRKÇE
+                    </button>
+                </div>
+
+                <div class="w-full">
+                    <div id="form-en" style="display: block;">
+                         <iframe src="https://docs.google.com/forms/d/18dOuLHigil_d-Z75kfg2l4zu3bJ5xXx4Lo_409GyTXo/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                    </div>
+
+                    <div id="form-tr" style="display: none;">
+                        <iframe src="https://docs.google.com/forms/d/11U1A3Dee8uhAXMaRNOChOZMMm-RClKVtoY4f6w2mS80/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
+                    </div>
+                </div>
             </div>
+
         </div>
     </section>
 
@@ -345,6 +349,39 @@
                 navbar.classList.replace('bg-white', 'bg-white/90');
             }
         });
+
+        // Language Switcher Logic
+        function showEnglish() {
+            // Show/Hide Forms
+            document.getElementById('form-en').style.display = 'block';
+            document.getElementById('form-tr').style.display = 'none';
+            
+            // Button Styles (Tailwind Classes)
+            const btnEn = document.getElementById('btn-en');
+            const btnTr = document.getElementById('btn-tr');
+
+            // Set English Active (Purple)
+            btnEn.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md";
+            
+            // Set Turkish Inactive (White/Gray)
+            btnTr.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50";
+        }
+
+        function showTurkish() {
+            // Show/Hide Forms
+            document.getElementById('form-en').style.display = 'none';
+            document.getElementById('form-tr').style.display = 'block';
+            
+            // Button Styles
+            const btnEn = document.getElementById('btn-en');
+            const btnTr = document.getElementById('btn-tr');
+
+            // Set Turkish Active (Purple)
+            btnTr.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md";
+            
+            // Set English Inactive (White/Gray)
+            btnEn.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50";
+        }
     </script>
 </body>
 </html>
