@@ -4,23 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WeWin | Women Entrepreneurs Win Network</title>
-    <meta name="description" content="Empowering women entrepreneurs in Ohio with strategic research, community, and emotional resilience.">
+    <meta name="description" content="Empowering women entrepreneurs in Ohio.">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
         
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Playfair Display', serif;
-        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        
+        /* Arka plan süslemeleri (Blob) */
         .blob {
-            position: absolute;
-            filter: blur(40px);
-            z-index: -1;
-            opacity: 0.4;
+            position: absolute; filter: blur(40px); z-index: -1; opacity: 0.4;
             animation: float 10s infinite ease-in-out;
         }
         @keyframes float {
@@ -36,20 +31,11 @@
                 extend: {
                     colors: {
                         brand: {
-                            50: '#fbf7fc',
-                            100: '#f5eef9',
-                            200: '#eadbf3',
-                            300: '#dbc0ea',
-                            400: '#c59ce0',
-                            500: '#aa73d1',
-                            600: '#9254bd',
-                            700: '#7b40a2',
-                            800: '#693786',
-                            900: '#552b6b',
+                            50: '#fbf7fc', 100: '#f5eef9', 200: '#eadbf3', 300: '#dbc0ea',
+                            400: '#c59ce0', 500: '#aa73d1', 600: '#9254bd', 700: '#7b40a2',
+                            800: '#693786', 900: '#552b6b',
                         },
-                        teal: {
-                            accent: '#2dd4bf'
-                        }
+                        teal: { accent: '#2dd4bf' }
                     }
                 }
             }
@@ -58,41 +44,28 @@
 </head>
 <body class="text-slate-700 bg-brand-50">
 
-    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-brand-100 transition-all duration-300" id="navbar">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-md border-b border-brand-100 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center gap-2">
+                <div class="flex items-center gap-2">
                     <div class="bg-brand-600 text-white p-2 rounded-lg">
                         <i data-lucide="flower-2" class="h-6 w-6"></i>
                     </div>
                     <span class="font-bold text-2xl text-brand-900 tracking-tight">WeWin</span>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#about" class="text-slate-600 hover:text-brand-600 font-medium transition">My Story</a>
-                    <a href="#services" class="text-slate-600 hover:text-brand-600 font-medium transition">How It Works</a>
+                    <a href="#mystory" class="text-slate-600 hover:text-brand-600 font-medium transition">My Story</a>
+                    <a href="#howitworks" class="text-slate-600 hover:text-brand-600 font-medium transition">How It Works</a>
                     <a href="#membership" class="text-brand-600 font-bold hover:text-brand-800 transition">Membership</a>
-                    <a href="#assessment-intro" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Get Started</a>
+                    <a href="#membership" class="bg-brand-600 text-white px-6 py-2.5 rounded-full hover:bg-brand-700 transition shadow-lg shadow-brand-200">Get Started</a>
                 </div>
-                <div class="md:hidden">
-                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-brand-600">
-                        <i data-lucide="menu" class="h-6 w-6"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-brand-100 p-4">
-            <div class="flex flex-col space-y-4">
-                <a href="#about" class="text-slate-600 font-medium">My Story</a>
-                <a href="#services" class="text-slate-600 font-medium">How It Works</a>
-                <a href="#membership" class="text-brand-600 font-bold">Membership</a>
-                <a href="#assessment-intro" class="text-brand-600 font-bold">Get Started</a>
             </div>
         </div>
     </nav>
 
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div class="blob bg-purple-300 w-96 h-96 rounded-full top-0 left-0 -translate-x-1/2 -translate-y-1/2"></div>
-        <div class="blob bg-teal-200 w-80 h-80 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3 animation-delay-2000"></div>
+        <div class="blob bg-teal-200 w-80 h-80 rounded-full bottom-0 right-0 translate-x-1/3 translate-y-1/3"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
@@ -108,72 +81,77 @@
                         Combining <strong>strategic research</strong> with <strong>counseling support</strong> to help women entrepreneurs in Ohio overcome bureaucratic chaos and fear of failure.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                        <button onclick="document.getElementById('assessment-intro').scrollIntoView({behavior: 'smooth'})" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
+                        <a href="#membership" class="px-8 py-4 bg-brand-700 text-white rounded-xl hover:bg-brand-800 transition shadow-xl shadow-brand-200 flex items-center justify-center gap-2 font-semibold">
                             <i data-lucide="sparkles" class="w-5 h-5"></i>
-                            Take Free Skill Assessment
-                        </button>
-                        <button onclick="document.getElementById('membership').scrollIntoView({behavior: 'smooth'})" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
-                            View Membership Plans
-                        </button>
-                    </div>
-                    <div class="mt-8 flex items-center justify-center lg:justify-start gap-4 text-sm text-slate-500">
-                        <div class="flex items-center gap-1">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Free Profile Analysis
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <i data-lucide="check-circle-2" class="w-4 h-4 text-teal-500"></i> Ohio-Specific
-                        </div>
+                            Take Free Assessment
+                        </a>
+                        <a href="#mystory" class="px-8 py-4 bg-white text-brand-700 border border-brand-200 rounded-xl hover:bg-brand-50 transition flex items-center justify-center gap-2 font-semibold">
+                            Read My Story
+                        </a>
                     </div>
                 </div>
                 <div class="lg:col-span-5 mt-12 lg:mt-0 relative">
                     <div class="relative rounded-2xl overflow-hidden shadow-2xl border-8 border-white transform rotate-2 hover:rotate-0 transition duration-500">
-                        <img src="nesibe.jpeg" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'" alt="Nesibe Aydin" class="w-full h-auto object-cover">
-                        
-                        <div class="absolute bottom-0 left-0 right-0 bg-white/95 backdrop-blur-sm p-4 border-t border-brand-100">
-                            <h3 class="font-serif text-xl text-brand-800">Nesibe Aydin</h3>
-                            <p class="text-slate-600 text-sm">Business Counselor & Research Specialist</p>
-                            <div class="mt-2 flex gap-1 flex-wrap">
-                                <span class="px-1.5 py-0.5 bg-brand-50 rounded shadow-sm text-[10px] text-slate-500">🇹🇷 TR</span>
-                                <span class="px-1.5 py-0.5 bg-brand-50 rounded shadow-sm text-[10px] text-slate-500">🇷🇺 RU</span>
-                                <span class="px-1.5 py-0.5 bg-brand-50 rounded shadow-sm text-[10px] text-slate-500">🇰🇬 KG</span>
-                                <span class="px-1.5 py-0.5 bg-brand-50 rounded shadow-sm text-[10px] text-slate-500">🇺🇸 US</span>
-                            </div>
-                        </div>
+                        <img src="nesibe.jpeg" alt="Nesibe Aydin" class="w-full h-auto object-cover">
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-20 bg-white">
+    <section id="mystory" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold text-brand-900 mb-4">Building a Business, Honoring the Family</h2>
+                <div class="w-24 h-1 bg-brand-200 mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="prose prose-lg text-slate-600 mx-auto leading-relaxed space-y-6 text-lg">
+                <p>
+                    As a mother, I realized early on that the workday doesn't truly end at 5:00 PM. That is simply when the "second shift" begins. You come home, and instantly, your focus shifts to your children—ensuring they are fulfilled physically, mentally, and emotionally. This is the natural, unavoidable gravity of motherhood.
+                </p>
+                <p>
+                    However, the corporate world is often designed for the pursuit of profit, not the well-being of the family. I realized that rigid 8-to-5 schedules and ruthless competition were meaningless if they came at the expense of my home life. I believe that a society that marginalizes the family is destroying its own future—like cutting the very branch it rests upon.
+                </p>
+                <div class="bg-brand-50 border-l-4 border-brand-500 p-6 my-8 rounded-r-lg italic font-medium text-brand-800">
+                    "I refused to accept these conditions. I refused to choose between being a successful professional and a present mother. So, I decided to build a business where I set the rules."
+                </div>
+                <p>
+                    My new journey began with a desire to learn, share, and give back. I started writing about entrepreneurship for our local community newspaper and launched a volunteer project where high school students, including my own daughter, interviewed local businesswomen. When I shared my vision with the newspaper’s editor, he saw a business in my passion. That conversation was the spark for WeWin.
+                </p>
+                <p>
+                    Today, I combine my background in counseling with business strategy to help women navigate the startup world. My goal is to help them avoid common pitfalls and build companies that fit their lives, not the other way around.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="howitworks" class="py-20 bg-brand-50 border-t border-brand-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-brand-900">My Approach</h2>
+            </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-brand-50 border border-brand-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 bg-brand-200 rounded-lg flex items-center justify-center text-brand-700 mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-brand-100">
+                    <div class="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center text-brand-700 mb-6">
                         <i data-lucide="heart-handshake" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-brand-900 mb-3">Counselor's Approach</h3>
-                    <p class="text-slate-600">
-                        I use counseling techniques to help you manage anxiety, imposter syndrome, and the fear of the unknown.
-                    </p>
+                    <h3 class="text-xl font-bold text-brand-900 mb-3">Counselor's Mindset</h3>
+                    <p class="text-slate-600">Managing anxiety, imposter syndrome, and the fear of the unknown.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-teal-50 border border-teal-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 bg-teal-200 rounded-lg flex items-center justify-center text-teal-700 mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-teal-100">
+                    <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center text-teal-700 mb-6">
                         <i data-lucide="search-check" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-teal-900 mb-3">Researcher's Precision</h3>
-                    <p class="text-slate-600">
-                        I dive deep into government grants, certifications (WBE/MBE), and paperwork so you get clear checklists.
-                    </p>
+                    <h3 class="text-xl font-bold text-teal-900 mb-3">Strategic Research</h3>
+                    <p class="text-slate-600">Deep dives into government grants, certifications, and paperwork checklists.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-orange-50 border border-orange-100 hover:shadow-lg transition">
-                    <div class="w-12 h-12 bg-orange-200 rounded-lg flex items-center justify-center text-orange-700 mb-6">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-orange-100">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-700 mb-6">
                         <i data-lucide="globe-2" class="w-6 h-6"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-orange-900 mb-3">Global Experience</h3>
-                    <p class="text-slate-600">
-                        Specializing in helping women from diverse backgrounds navigate the US business system.
-                    </p>
+                    <h3 class="text-xl font-bold text-orange-900 mb-3">Global Perspective</h3>
+                    <p class="text-slate-600">Helping women from diverse backgrounds navigate the US system.</p>
                 </div>
             </div>
         </div>
@@ -184,204 +162,123 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-bold mb-4">Choose Your Path</h2>
-                <p class="text-brand-200 max-w-2xl mx-auto text-lg">
-                    Whether you are just curious or ready to dominate the market, we have a space for you.
+                <p class="text-brand-200 max-w-2xl mx-auto">
+                    Whether you are just curious or ready to dominate the market.
                 </p>
             </div>
 
             <div class="grid lg:grid-cols-3 gap-8 items-start">
                 
-                <div class="bg-white text-slate-800 rounded-3xl p-8 border-4 border-brand-200 shadow-2xl relative transform hover:-translate-y-2 transition duration-300">
-                    <div class="absolute top-0 right-0 bg-teal-400 text-white text-xs font-bold px-3 py-1 rounded-bl-xl rounded-tr-2xl">POPULAR START</div>
+                <div class="bg-white text-slate-800 rounded-3xl p-8 border-4 border-brand-200 shadow-xl relative transform hover:-translate-y-1 transition duration-300">
                     <h3 class="text-2xl font-bold text-brand-900 mb-2">WeWin Spark</h3>
-                    <div class="text-4xl font-bold mb-6">$0<span class="text-lg text-slate-400 font-normal">/mo</span></div>
-                    <p class="text-slate-600 mb-6 text-sm h-10">Discover your entrepreneur type and get weekly motivation.</p>
+                    <div class="text-4xl font-bold mb-4">$0</div>
+                    <p class="text-sm text-slate-500 mb-6 border-b border-brand-100 pb-4">
+                        Discover your entrepreneur type & get weekly motivation.
+                    </p>
                     
-                    <ul class="space-y-4 mb-8 text-sm">
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> <strong>Entrepreneur Skill Assessment</strong>
+                    <div class="mb-6 space-y-3">
+                        <p class="text-xs font-bold text-brand-500 uppercase tracking-widest text-center">Start Free Assessment</p>
+                        
+                        <a href="https://docs.google.com/forms/d/18dOuLHigil_d-Z75kfg2l4zu3bJ5xXx4Lo_409GyTXo/viewform" 
+                           target="_blank" 
+                           class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 transition shadow-md group">
+                            <span>English Form</span>
+                            <i data-lucide="external-link" class="w-4 h-4 opacity-70 group-hover:opacity-100"></i>
+                        </a>
+
+                        <a href="https://docs.google.com/forms/d/11U1A3Dee8uhAXMaRNOChOZMMm-RClKVtoY4f6w2mS80/viewform" 
+                           target="_blank" 
+                           class="flex items-center justify-center gap-2 w-full py-3 rounded-xl border-2 border-brand-100 text-slate-600 font-bold hover:border-brand-300 hover:text-brand-700 transition bg-brand-50/50">
+                            <span>Türkçe Form</span>
+                        </a>
+                    </div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="text-teal-500 w-4 h-4"></i> Skill Assessment
                         </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> Basic "Spark" Profile Report
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="text-teal-500 w-4 h-4"></i> Basic Profile Report
                         </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="check" class="text-teal-500 w-5 h-5"></i> Weekly Newsletter
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="check" class="text-teal-500 w-4 h-4"></i> Weekly Newsletter
                         </li>
                     </ul>
-                    
-                    <button onclick="document.getElementById('assessment-intro').scrollIntoView({behavior: 'smooth'})" class="w-full py-4 rounded-xl border-2 border-brand-600 text-brand-600 font-bold hover:bg-brand-50 transition">
-                        Take Free Assessment
-                    </button>
                 </div>
 
                 <div class="bg-gradient-to-b from-brand-100 to-white text-slate-800 rounded-3xl p-8 border-4 border-brand-400 shadow-2xl relative transform scale-105 z-10">
-                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-brand-600 text-white px-6 py-2 rounded-full font-bold text-sm shadow-lg">RECOMMENDED</div>
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-600 text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg">RECOMMENDED</div>
                     <h3 class="text-2xl font-bold text-brand-900 mb-2">WeWin Builder</h3>
                     <div class="text-4xl font-bold mb-6">$19<span class="text-lg text-slate-400 font-normal">/mo</span></div>
-                    <p class="text-slate-600 mb-6 text-sm h-10">Tools, checklists, and templates to build your business yourself.</p>
+                    <p class="text-sm text-slate-500 mb-6">Tools & Checklists to build it yourself.</p>
                     
                     <ul class="space-y-4 mb-8 text-sm">
                         <li class="flex items-center gap-3">
                             <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
-                            <strong>Everything in Spark</strong>
+                            Everything in Spark
                         </li>
                         <li class="flex items-center gap-3">
                             <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
-                            <strong>Detailed</strong> Assessment Report
+                            <strong>Resource Vault</strong>
                         </li>
                         <li class="flex items-center gap-3">
                             <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
-                            Access to <strong>Resource Vault</strong>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <div class="bg-brand-200 p-1 rounded-full"><i data-lucide="check" class="text-brand-700 w-3 h-3"></i></div>
-                            Ohio LLC & Grant Templates
+                            LLC & Grant Templates
                         </li>
                     </ul>
-                    
-                    <button onclick="alert('WeWin Builder is opening soon! You have been added to the waitlist.')" class="w-full py-4 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 transition shadow-lg">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfinV-iL7W2EYfialdVK3aokX-xI30886zBLzP7R3baO-owrg/viewform?usp=header" 
+                        target="_blank" 
+                        class="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-brand-600 text-white font-bold hover:bg-brand-700 transition shadow-md group">
                         Join Waitlist
-                    </button>
-                    <div class="text-center mt-3 text-xs text-brand-700 font-medium">Coming Soon</div>
+                    </a>
+                    <div class="text-center mt-2 text-xs text-brand-700 font-medium">Coming Soon</div>
                 </div>
 
-                <div class="bg-brand-800 text-white rounded-3xl p-8 border-4 border-brand-700 shadow-2xl relative transform hover:-translate-y-2 transition duration-300">
+                <div class="bg-brand-800 text-white rounded-3xl p-8 border-4 border-brand-700 shadow-xl relative">
                     <h3 class="text-2xl font-bold text-white mb-2">WeWin Circle</h3>
                     <div class="text-4xl font-bold mb-6">$49<span class="text-lg text-brand-300 font-normal">/mo</span></div>
-                    <p class="text-brand-100 mb-6 text-sm h-10">Community, accountability, and direct guidance.</p>
+                    <p class="text-sm text-brand-200 mb-6">Community & Mentorship.</p>
                     
                     <ul class="space-y-4 mb-8 text-sm text-brand-100">
                         <li class="flex items-center gap-3">
-                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> <strong>Everything in Builder</strong>
+                            <i data-lucide="star" class="text-yellow-400 w-4 h-4"></i> Everything in Builder
                         </li>
                         <li class="flex items-center gap-3">
-                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Monthly <strong>Mastermind Calls</strong>
+                            <i data-lucide="star" class="text-yellow-400 w-4 h-4"></i> Mastermind Calls
                         </li>
                         <li class="flex items-center gap-3">
-                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Private Community Group
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="star" class="text-yellow-400 w-5 h-5"></i> Priority Email Support
+                            <i data-lucide="star" class="text-yellow-400 w-4 h-4"></i> Private Community
                         </li>
                     </ul>
-                    
-                    <button onclick="alert('WeWin Circle is opening soon! You have been added to the waitlist.')" class="w-full py-4 rounded-xl bg-brand-500 text-white font-bold hover:bg-brand-400 transition border border-brand-400">
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfinV-iL7W2EYfialdVK3aokX-xI30886zBLzP7R3baO-owrg/viewform?usp=header" 
+                        target="_blank" 
+                        class="block w-full py-3 text-center rounded-xl bg-brand-500 text-white font-bold hover:bg-brand-400 transition border border-brand-400">
                         Join Waitlist
-                    </button>
-                    <div class="text-center mt-3 text-xs text-brand-300 font-medium">Coming Soon</div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="assessment-intro" class="py-20 bg-brand-50">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="inline-block p-4 rounded-full bg-white mb-6 shadow-sm">
-                <i data-lucide="brain-circuit" class="w-8 h-8 text-brand-600"></i>
-            </div>
-            <h2 class="text-3xl font-bold text-brand-900 mb-2">Discover Your Entrepreneurial DNA</h2>
-            <p class="text-lg text-slate-600 mb-8 max-w-2xl mx-auto">
-                Are you a "Visionary" or a "System Builder"? Take this 2-minute assessment to find your blind spots and get your <strong>free "WeWin Spark" profile.</strong>
-            </p>
-            
-            <div class="bg-white rounded-2xl shadow-xl border border-brand-100 overflow-hidden">
-                
-                <div class="bg-brand-50 p-4 border-b border-brand-100 flex justify-center gap-4">
-                    <button onclick="showEnglish()" id="btn-en" class="px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md">
-                        ENGLISH
-                    </button>
-                    <button onclick="showTurkish()" id="btn-tr" class="px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50">
-                        TÜRKÇE
-                    </button>
-                </div>
-
-                <div class="w-full">
-                    <div id="form-en" style="display: block;">
-                         <iframe src="https://docs.google.com/forms/d/18dOuLHigil_d-Z75kfg2l4zu3bJ5xXx4Lo_409GyTXo/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-                    </div>
-
-                    <div id="form-tr" style="display: none;">
-                        <iframe src="https://docs.google.com/forms/d/11U1A3Dee8uhAXMaRNOChOZMMm-RClKVtoY4f6w2mS80/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Yükleniyor...</iframe>
-                    </div>
+                    </a>
+                    <div class="text-center mt-2 text-xs text-brand-300 font-medium">Coming Soon</div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <footer class="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row justify-between items-center">
-                <div class="mb-6 md:mb-0 text-center md:text-left">
-                    <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
-                         <i data-lucide="flower-2" class="h-6 w-6 text-brand-400"></i>
-                        <span class="font-bold text-2xl text-white tracking-tight">WeWin</span>
-                    </div>
-                    <p class="text-sm text-slate-400">Women Entrepreneurs Win Network</p>
-                    <p class="text-sm text-slate-500 mt-2">Based in Columbus, Ohio</p>
-                </div>
-                <div class="flex gap-6">
-                    <a href="#" class="hover:text-brand-400 transition"><i data-lucide="instagram" class="w-5 h-5"></i></a>
-                    <a href="https://www.linkedin.com/in/nesibeaydin" target="_blank" class="hover:text-brand-400 transition"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
-                    <a href="#" class="hover:text-brand-400 transition"><i data-lucide="mail" class="w-5 h-5"></i></a>
-                </div>
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex items-center justify-center gap-2 mb-4">
+                 <i data-lucide="flower-2" class="h-6 w-6 text-brand-400"></i>
+                <span class="font-bold text-2xl text-white">WeWin</span>
             </div>
-            <div class="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-500">
-                &copy; 2025 WeWin LLC. All rights reserved. <br>
-                <a href="#" class="hover:text-white">Privacy Policy</a> | <a href="#" class="hover:text-white">Terms of Service</a>
+            <p class="text-slate-500 text-sm mb-6">Based in Columbus, Ohio</p>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="hover:text-brand-400"><i data-lucide="instagram"></i></a>
+                <a href="https://www.linkedin.com/in/nesibeaydin" target="_blank" class="hover:text-brand-400"><i data-lucide="linkedin"></i></a>
+                <a href="#" class="hover:text-brand-400"><i data-lucide="mail"></i></a>
             </div>
+            <p class="text-xs text-slate-600">&copy; 2025 WeWin LLC. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Initialize Lucide Icons
         lucide.createIcons();
-
-        // Navbar Scroll Effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('shadow-md');
-                navbar.classList.replace('bg-white/90', 'bg-white');
-            } else {
-                navbar.classList.remove('shadow-md');
-                navbar.classList.replace('bg-white', 'bg-white/90');
-            }
-        });
-
-        // Language Switcher Logic
-        function showEnglish() {
-            // Show/Hide Forms
-            document.getElementById('form-en').style.display = 'block';
-            document.getElementById('form-tr').style.display = 'none';
-            
-            // Button Styles (Tailwind Classes)
-            const btnEn = document.getElementById('btn-en');
-            const btnTr = document.getElementById('btn-tr');
-
-            // Set English Active (Purple)
-            btnEn.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md";
-            
-            // Set Turkish Inactive (White/Gray)
-            btnTr.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50";
-        }
-
-        function showTurkish() {
-            // Show/Hide Forms
-            document.getElementById('form-en').style.display = 'none';
-            document.getElementById('form-tr').style.display = 'block';
-            
-            // Button Styles
-            const btnEn = document.getElementById('btn-en');
-            const btnTr = document.getElementById('btn-tr');
-
-            // Set Turkish Active (Purple)
-            btnTr.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-brand-600 text-white shadow-md";
-            
-            // Set English Inactive (White/Gray)
-            btnEn.className = "px-6 py-2 rounded-lg font-bold transition-all duration-300 bg-white text-slate-600 border border-brand-200 hover:bg-brand-50";
-        }
     </script>
 </body>
 </html>
